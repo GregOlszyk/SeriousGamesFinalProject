@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://eoxvlvj65alt"]
+[gd_scene load_steps=3 format=3 uid="uid://eoxvlvj65alt"]
+
+[ext_resource type="Script" uid="uid://b66utomfl7rur" path="res://Trash/trash.gd" id="1_6spm4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yuaj4"]
+radius = 14.0357
 
 [node name="Trash" type="Area2D"]
+script = ExtResource("1_6spm4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+region_rect = Rect2(2, 17, 15, 45)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yuaj4")
