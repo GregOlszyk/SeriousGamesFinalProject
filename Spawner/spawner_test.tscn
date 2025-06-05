@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://c8xra5m10jbts"]
+[gd_scene load_steps=2 format=3 uid="uid://c8xra5m10jbts"]
+
+[ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_q5mt3"]
 
 [node name="SpawnerTest" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Spawner" parent="." instance=ExtResource("1_q5mt3")]
+position = Vector2(6, -220)
