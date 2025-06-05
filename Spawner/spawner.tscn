@@ -1,3 +1,32 @@
-[gd_scene format=3 uid="uid://b8wphxhwoylwy"]
+[gd_scene load_steps=4 format=3 uid="uid://b8wphxhwoylwy"]
+
+[ext_resource type="Texture2D" uid="uid://chh1la6323x8x" path="res://icon.svg" id="1_10h3l"]
+
+[sub_resource type="GDScript" id="GDScript_10h3l"]
+script/source = "extends AnimatableBody2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_38tkg"]
+size = Vector2(120, 124)
 
 [node name="Spawner" type="Node2D"]
+
+[node name="test object" type="AnimatableBody2D" parent="."]
+script = SubResource("GDScript_10h3l")
+
+[node name="Sprite2D" type="Sprite2D" parent="test object"]
+texture = ExtResource("1_10h3l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="test object"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_38tkg")
