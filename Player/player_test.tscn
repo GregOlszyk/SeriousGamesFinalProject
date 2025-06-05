@@ -1,3 +1,16 @@
-[gd_scene format=3 uid="uid://iw7tq2s6pedy"]
+[gd_scene load_steps=3 format=3 uid="uid://iw7tq2s6pedy"]
+
+[ext_resource type="PackedScene" uid="uid://cv6ymigjviy3g" path="res://Player/player_bin.tscn" id="1_q8jdk"]
+[ext_resource type="PackedScene" uid="uid://clr2po0vepdae" path="res://Player/player_bin2.tscn" id="2_o7sax"]
 
 [node name="PlayerTest" type="Node2D"]
+
+[node name="PlayerBin" parent="." instance=ExtResource("1_q8jdk")]
+position = Vector2(1, -164)
+scale = Vector2(0.5, 0.5)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="PlayerBin2" parent="." instance=ExtResource("2_o7sax")]
+position = Vector2(2, 157)
+scale = Vector2(0.5, 0.5)
