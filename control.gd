@@ -15,6 +15,7 @@ func _process(delta: float) -> void:
 
 func _on_start_button_pressed() -> void:
 	print("Game has started")
+	get_tree().call_deferred("change_scene_to_packed", main_scene)
 	
 
 

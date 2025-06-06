@@ -3,6 +3,7 @@ extends Node2D
 @export var trash : PackedScene
 @export var spawn_interval := 1.0
 @export var spawn_area_width := 400
+@export var y_position := 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,5 +19,5 @@ func _ready() -> void:
 func _on_timer_timeout() -> void:
 	var obj = trash.instantiate()
 	var x_position = randf_range(-spawn_area_width / 2, spawn_area_width / 2)
-	obj.position = Vector2(x_position, -50)  # Start above screen
+	obj.position = Vector2(x_position, y_position)  # Start above screen
 	get_tree().current_scene.add_child(obj)

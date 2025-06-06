@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://culej3q5g2qrc"]
+[gd_scene load_steps=6 format=3 uid="uid://culej3q5g2qrc"]
 
 [ext_resource type="Script" uid="uid://bg1blalperl1b" path="res://control.gd" id="1_8ykj4"]
 [ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://Assets/sci_fi_bg1.jpg" id="2_cei2k"]
+[ext_resource type="PackedScene" uid="uid://cqqi51jp21cbl" path="res://Main Game/main.tscn" id="2_ykdfq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qtu10"]
 texture = ExtResource("2_cei2k")
@@ -23,6 +24,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8ykj4")
+main_scene = ExtResource("2_ykdfq")
 
 [node name="Background" type="Panel" parent="."]
 layout_mode = 1

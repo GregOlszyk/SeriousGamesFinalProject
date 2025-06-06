@@ -1,12 +1,12 @@
 [gd_scene load_steps=4 format=3 uid="uid://clr2po0vepdae"]
 
-[ext_resource type="Texture2D" uid="uid://dsyglr32efquo" path="res://Assets/dumpster2.png" id="1_enfdn"]
+[ext_resource type="Texture2D" uid="uid://d2biqk7acjqql" path="res://Assets/dumpster2.png" id="1_enfdn"]
 [ext_resource type="Script" uid="uid://qne46saoagw0" path="res://Player/player_bin_2.gd" id="1_g46kj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cl3n3"]
 size = Vector2(431, 241)
 
-[node name="PlayerBin" type="CharacterBody2D"]
+[node name="PlayerBin" type="CharacterBody2D" groups=["Trash"]]
 script = ExtResource("1_g46kj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

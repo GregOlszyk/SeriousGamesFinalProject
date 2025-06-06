@@ -20,3 +20,8 @@ func _ready():
 
 func _physics_process(delta):
 	linear_velocity.y += gravity * delta
+
+
+func _on_hitbox_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Recycle") or body.is_in_group("Trash"):
+		queue_free()
