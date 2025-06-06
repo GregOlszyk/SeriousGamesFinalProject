@@ -11,10 +11,10 @@ config_version=5
 [application]
 
 config/name="Sort It Out"
-<<<<<<< HEAD
-run/main_scene="res://Title Screen/control.tscn"
+run/main_scene="uid://culej3q5g2qrc"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="res://Title Screen/control.tscn"
 
 [rendering]
 
