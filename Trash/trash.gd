@@ -2,6 +2,7 @@ extends RigidBody2D
 
 @export var recyclable_sprites : Array[AtlasTexture]
 @export var trash_sprites : Array[AtlasTexture]
+@export var sparkle : PackedScene
 @onready var sprite = $Sprite2D
 var is_recyclable : bool
 # the size of each sprite array should be the same
@@ -23,5 +24,10 @@ func _physics_process(delta):
 
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Recycle"):
+		var obj = sparkle.instantiate()
+		body.add_child(obj)
+		obj.position.x = 0
+		obj.position.y = 0
 	if body.is_in_group("Recycle") or body.is_in_group("Trash"):
 		queue_free()
