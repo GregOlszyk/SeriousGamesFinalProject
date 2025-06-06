@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxdh0wir161ab"]
+
+[ext_resource type="Texture2D" uid="uid://b646aab0mjg7l" path="res://Assets/Unknown-1.jpeg" id="1_oabld"]
+
+[node name="TextureRect" type="TextureRect"]
+offset_left = -131.0
+offset_top = -113.0
+offset_right = 229.0
+offset_bottom = 200.0
+texture = ExtResource("1_oabld")
