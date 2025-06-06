@@ -1,17 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://cv6ymigjviy3g"]
+[gd_scene load_steps=4 format=3 uid="uid://clr2po0vepdae"]
 
-[ext_resource type="Script" uid="uid://tgqdg6ih0iis" path="res://Player/player_bin.gd" id="1_cl3n3"]
-[ext_resource type="Texture2D" uid="uid://cx8gbl1qbbwbk" path="res://Assets/dumpster1.png" id="1_ohiau"]
+[ext_resource type="Texture2D" uid="uid://dsyglr32efquo" path="res://Assets/dumpster2.png" id="1_enfdn"]
+[ext_resource type="Script" uid="uid://qne46saoagw0" path="res://Player/player_bin_2.gd" id="1_g46kj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cl3n3"]
 size = Vector2(431, 241)
 
 [node name="PlayerBin" type="CharacterBody2D"]
-script = ExtResource("1_cl3n3")
+script = ExtResource("1_g46kj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3.5, 10.5)
 shape = SubResource("RectangleShape2D_cl3n3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_ohiau")
+texture = ExtResource("1_enfdn")
