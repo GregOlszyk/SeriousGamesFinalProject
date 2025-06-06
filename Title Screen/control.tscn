@@ -1,0 +1,118 @@
+[gd_scene load_steps=5 format=3 uid="uid://culej3q5g2qrc"]
+
+[ext_resource type="Script" uid="uid://bg1blalperl1b" path="res://control.gd" id="1_8ykj4"]
+[ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://Assets/sci_fi_bg1.jpg" id="2_cei2k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qtu10"]
+texture = ExtResource("2_cei2k")
+modulate_color = Color(0.362644, 0.557486, 0.46036, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
+bg_color = Color(0.395906, 0.189942, 0.172202, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 14
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ykj4")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_qtu10")
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.315
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -134.0
+offset_top = 15.88
+offset_right = 134.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_62e2m")
+text = "Start Game
+"
+
+[node name="HowtoPlay" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.315
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.0
+offset_top = 249.88
+offset_right = 132.0
+offset_bottom = 188.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_62e2m")
+text = "How to Play?
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -192.0
+offset_top = 23.0
+offset_right = 205.0
+offset_bottom = 126.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 75
+text = "Sort It Out!"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -151.0
+offset_top = 140.0
+offset_right = 194.0
+offset_bottom = 187.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Team Up to Clean Up"
+
+[node name="tutorial" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -563.0
+offset_top = -112.0
+offset_right = 554.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Choose to play either by yourself or with 2 players. 
+Use A&D keys for the recycle bin and L&R arrow keys for the trash bin. 
+Move left to right picking up the correct piece of trash for each bin. 
+Avoid getting the wrong types of trash in the bins!"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="HowtoPlay" to="." method="_on_howto_play_pressed"]
