@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2biqk7acjqql"
-path="res://.godot/imported/dumpster2.png-ba073df4a6798e0a952f8fea80600199.ctex"
+uid="uid://cb842d77pt28k"
+path="res://.godot/imported/Kelvana_E.png-027475af71f7ffed93bbe18560246a0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/dumpster2.png"
-dest_files=["res://.godot/imported/dumpster2.png-ba073df4a6798e0a952f8fea80600199.ctex"]
+source_file="res://Assets/Kelvana_E.png"
+dest_files=["res://.godot/imported/Kelvana_E.png-027475af71f7ffed93bbe18560246a0d.ctex"]
 
 [params]
 

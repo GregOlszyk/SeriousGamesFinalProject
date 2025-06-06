@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://exoaom8h0vhg"]
+[gd_scene load_steps=2 format=3 uid="uid://exoaom8h0vhg"]
+
+[ext_resource type="PackedScene" uid="uid://eoxvlvj65alt" path="res://Trash/trash.tscn" id="1_ystem"]
 
 [node name="TrashTest" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Trash" parent="." instance=ExtResource("1_ystem")]
+position = Vector2(-432, -200)
+
+[node name="Trash2" parent="." instance=ExtResource("1_ystem")]
+position = Vector2(184, -235)
+
+[node name="Trash3" parent="." instance=ExtResource("1_ystem")]
+position = Vector2(-314, 19)
+
+[node name="Trash4" parent="." instance=ExtResource("1_ystem")]
+position = Vector2(169, -20)
