@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 <<<<<<<HEADrun/main_scene="res://Title Screen/control.tscn"
 
+[autoload]
+
+Global="*res://Main Game/global.gd"
+
 [input]
 
 p1_left={

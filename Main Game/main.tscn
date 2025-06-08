@@ -1,11 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqqi51jp21cbl"]
+[gd_scene load_steps=9 format=3 uid="uid://cqqi51jp21cbl"]
 
+[ext_resource type="Script" uid="uid://b3ecclrjnbv3b" path="res://Main Game/main.gd" id="1_e36ys"]
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
+[ext_resource type="Texture2D" uid="uid://c40ivv45w65w1" path="res://Assets/background.png" id="1_vaqtm"]
 [ext_resource type="PackedScene" uid="uid://eoxvlvj65alt" path="res://Trash/trash.tscn" id="2_x6ho8"]
 [ext_resource type="PackedScene" uid="uid://cv6ymigjviy3g" path="res://Player/player_bin.tscn" id="3_lp10x"]
 [ext_resource type="PackedScene" uid="uid://clr2po0vepdae" path="res://Player/player_bin2.tscn" id="4_n8baw"]
+[ext_resource type="LabelSettings" uid="uid://dmrpyfu8nii55" path="res://Main Game/recycle_label_settings.tres" id="6_e36ys"]
+[ext_resource type="LabelSettings" uid="uid://ddqc1vcqc2uq3" path="res://Main Game/trash_label_settings.tres" id="7_rbewq"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_e36ys")
+
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_vaqtm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(1.23849, 4.55467)
@@ -22,3 +31,19 @@ position = Vector2(1, 1)
 
 [node name="PlayerBin2" parent="." instance=ExtResource("4_n8baw")]
 position = Vector2(-12, 1125)
+
+[node name="Recycle Label" type="Label" parent="."]
+offset_left = -2222.0
+offset_top = -1232.0
+offset_right = -811.0
+offset_bottom = -959.0
+text = "Recycle Score: 0"
+label_settings = ExtResource("6_e36ys")
+
+[node name="Trash Label" type="Label" parent="."]
+offset_left = -2214.0
+offset_top = -952.0
+offset_right = -982.0
+offset_bottom = -679.0
+text = "Trash Score: 0"
+label_settings = ExtResource("7_rbewq")

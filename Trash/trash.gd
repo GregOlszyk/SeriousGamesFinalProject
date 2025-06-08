@@ -7,6 +7,7 @@ var is_recyclable : bool
 # the size of each sprite array should be the same
 @export var num_sprites = 4
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+@onready var main_game = get_node("root/Main")
 
 func _ready():
 	# randomly chooses if the trash is recyclable
@@ -23,5 +24,9 @@ func _physics_process(delta):
 
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Recycle") or body.is_in_group("Trash"):
+	if body is CharacterBody2D:
+		if body.is_in_group("Recycle") and is_recyclable:
+			Global.recycle_score += 1
+		if body.is_in_group("Trash") and !is_recyclable:
+			Global.trash_score += 1
 		queue_free()
