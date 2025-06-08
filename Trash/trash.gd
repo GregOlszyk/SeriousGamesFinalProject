@@ -23,5 +23,9 @@ func _physics_process(delta):
 
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Recycle") or body.is_in_group("Trash"):
+	if body is CharacterBody2D:
+		if body.is_in_group("Recycle"):
+			body.check_if_recyclable(is_recyclable)
+		if body.is_in_group("Trash"):
+			body.check_if_trash(!is_recyclable)
 		queue_free()

@@ -1,11 +1,37 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqqi51jp21cbl"]
+[gd_scene load_steps=12 format=3 uid="uid://cqqi51jp21cbl"]
 
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
+[ext_resource type="Texture2D" uid="uid://bic15df10whji" path="res://Assets/background.png" id="1_n8baw"]
+[ext_resource type="Script" uid="uid://uygep06bvs5" path="res://Main Game/main.gd" id="1_vaqtm"]
+[ext_resource type="PackedScene" uid="uid://cyiq1q1j1n4gw" path="res://End Screen/end_screen.tscn" id="2_rbewq"]
 [ext_resource type="PackedScene" uid="uid://eoxvlvj65alt" path="res://Trash/trash.tscn" id="2_x6ho8"]
 [ext_resource type="PackedScene" uid="uid://cv6ymigjviy3g" path="res://Player/player_bin.tscn" id="3_lp10x"]
 [ext_resource type="PackedScene" uid="uid://clr2po0vepdae" path="res://Player/player_bin2.tscn" id="4_n8baw"]
+[ext_resource type="FontFile" uid="uid://bw1dpb6eu3sw2" path="res://Fonts/national-park/NationalPark-Regular.otf" id="6_olwmy"]
+[ext_resource type="PackedScene" uid="uid://bc03jot2iy0fg" path="res://Main Game/heart.tscn" id="8_e36ys"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e36ys"]
+font = ExtResource("6_olwmy")
+font_size = 200
+font_color = Color(0, 0, 1, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_vaqtm"]
+font = ExtResource("6_olwmy")
+font_size = 200
+font_color = Color(1, 0, 0, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_vaqtm")
+end_scene = ExtResource("2_rbewq")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(-7, 2.00006)
+scale = Vector2(1.79844, 1.69922)
+texture = ExtResource("1_n8baw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(1.23849, 4.55467)
@@ -22,3 +48,45 @@ position = Vector2(1, 1)
 
 [node name="PlayerBin2" parent="." instance=ExtResource("4_n8baw")]
 position = Vector2(-12, 1125)
+
+[node name="Recycle Score" type="Label" parent="."]
+offset_left = -2235.0
+offset_top = -1240.0
+offset_right = -870.0
+offset_bottom = -1000.0
+text = "0 Reycled Trash"
+label_settings = SubResource("LabelSettings_e36ys")
+
+[node name="Trash Score" type="Label" parent="."]
+offset_left = -2231.0
+offset_top = -986.0
+offset_right = 133.0
+offset_bottom = -746.0
+text = "0 Regular Trash"
+label_settings = SubResource("LabelSettings_vaqtm")
+
+[node name="HealthBar" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 907.0
+offset_top = -1264.0
+offset_right = 2453.0
+offset_bottom = -1003.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Heart" parent="HealthBar" instance=ExtResource("8_e36ys")]
+layout_mode = 2
+
+[node name="Heart2" parent="HealthBar" instance=ExtResource("8_e36ys")]
+layout_mode = 2
+
+[node name="Heart3" parent="HealthBar" instance=ExtResource("8_e36ys")]
+layout_mode = 2
+
+[node name="Heart4" parent="HealthBar" instance=ExtResource("8_e36ys")]
+layout_mode = 2
+
+[node name="Heart5" parent="HealthBar" instance=ExtResource("8_e36ys")]
+layout_mode = 2

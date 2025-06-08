@@ -1,9 +1,15 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+const SPEED = 1000.0
 const JUMP_VELOCITY = -400.0
+@onready var main_game = get_node("/root/Main")
 
+func check_if_recyclable(is_recyclable : bool):
+	if is_recyclable:
+		main_game.add_recycle()
+	else:
+		main_game.take_damage()
 
 func _physics_process(delta: float) -> void:
 
