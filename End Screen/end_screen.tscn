@@ -99,3 +99,5 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_gjick")
 text = "Play Again!"
+
+[connection signal="pressed" from="Playagain" to="." method="_on_playagain_pressed"]

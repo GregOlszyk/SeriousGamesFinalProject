@@ -4,3 +4,10 @@ extends Control
 
 func _ready():
 	result_label.text = str("You collected ", Global.trash_score, " pieces of trash and ", Global.recycle_score, " recyclables")
+
+
+
+func _on_playagain_pressed() -> void:
+	Global.recycle_score = 0
+	Global.trash_score = 0
+	get_tree().change_scene_to_file("res://Main Game/main.tscn")
