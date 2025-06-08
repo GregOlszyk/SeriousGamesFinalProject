@@ -1,16 +1,19 @@
-[gd_scene load_steps=9 format=3 uid="uid://cqqi51jp21cbl"]
+[gd_scene load_steps=11 format=3 uid="uid://cqqi51jp21cbl"]
 
 [ext_resource type="Script" uid="uid://b3ecclrjnbv3b" path="res://Main Game/main.gd" id="1_e36ys"]
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
 [ext_resource type="Texture2D" uid="uid://c40ivv45w65w1" path="res://Assets/background.png" id="1_vaqtm"]
+[ext_resource type="PackedScene" uid="uid://cyiq1q1j1n4gw" path="res://End Screen/end_screen.tscn" id="2_p24th"]
 [ext_resource type="PackedScene" uid="uid://eoxvlvj65alt" path="res://Trash/trash.tscn" id="2_x6ho8"]
 [ext_resource type="PackedScene" uid="uid://cv6ymigjviy3g" path="res://Player/player_bin.tscn" id="3_lp10x"]
 [ext_resource type="PackedScene" uid="uid://clr2po0vepdae" path="res://Player/player_bin2.tscn" id="4_n8baw"]
 [ext_resource type="LabelSettings" uid="uid://dmrpyfu8nii55" path="res://Main Game/recycle_label_settings.tres" id="6_e36ys"]
 [ext_resource type="LabelSettings" uid="uid://ddqc1vcqc2uq3" path="res://Main Game/trash_label_settings.tres" id="7_rbewq"]
+[ext_resource type="PackedScene" uid="uid://i3ul2vv3uiq2" path="res://Main Game/heart.tscn" id="9_rbewq"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_e36ys")
+end_scene = ExtResource("2_p24th")
 
 [node name="Background" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
@@ -47,3 +50,19 @@ offset_right = -982.0
 offset_bottom = -679.0
 text = "Trash Score: 0"
 label_settings = ExtResource("7_rbewq")
+
+[node name="HealthBar" type="HBoxContainer" parent="."]
+offset_left = 1575.0
+offset_top = -1236.0
+offset_right = 1703.0
+offset_bottom = -1196.0
+scale = Vector2(5, 5)
+
+[node name="Heart" parent="HealthBar" instance=ExtResource("9_rbewq")]
+layout_mode = 2
+
+[node name="Heart2" parent="HealthBar" instance=ExtResource("9_rbewq")]
+layout_mode = 2
+
+[node name="Heart3" parent="HealthBar" instance=ExtResource("9_rbewq")]
+layout_mode = 2

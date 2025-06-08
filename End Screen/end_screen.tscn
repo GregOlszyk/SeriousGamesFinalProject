@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cyiq1q1j1n4gw"]
+[gd_scene load_steps=5 format=3 uid="uid://cyiq1q1j1n4gw"]
 
 [ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://Assets/sci_fi_bg1.jpg" id="1_gjick"]
+[ext_resource type="Script" uid="uid://c2q4xiasdf07p" path="res://End Screen/end_screen.gd" id="1_qm6ii"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qm6ii"]
 texture = ExtResource("1_gjick")
@@ -17,6 +18,7 @@ shadow_size = 12
 [node name="EndScreen" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_qm6ii")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0

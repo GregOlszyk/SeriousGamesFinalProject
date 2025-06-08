@@ -2,6 +2,20 @@ extends Node2D
 
 @onready var recycle_label = $"Recycle Label"
 @onready var trash_label = $"Trash Label"
+var health : int = 3
+var hearts : Array[TextureRect]
+@onready var health_bar = $HealthBar
+@export var end_scene : PackedScene
+
+func take_damage():
+	health -= 1
+	hearts[health].texture = preload("res://Assets/heart_empty_16x16.png")
+	if health == 0:
+		get_tree().call_deferred("change_scene_to_packed", end_scene)
+
+func _ready():
+	for heart in health_bar.get_children():
+		hearts.append(heart)
 
 func _process(delta):
 	recycle_label.text = str("Recycle Score: ", Global.recycle_score)
