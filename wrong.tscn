@@ -1,0 +1,44 @@
+[gd_scene load_steps=9 format=3 uid="uid://c1alt0fv2li3u"]
+
+[ext_resource type="Texture2D" uid="uid://dwcsithae3usx" path="res://Assets/Xs/images.png" id="1_lla21"]
+[ext_resource type="Script" uid="uid://daepa55r8mtgb" path="res://wrong.gd" id="1_spi8h"]
+[ext_resource type="Texture2D" uid="uid://0dhf7mb6yfwl" path="res://Assets/Xs/png-transparent-orange-x-sign-computer-icons-x-mark-red-x-mark-miscellaneous-angle-text-thumbnail.png" id="2_spi8h"]
+[ext_resource type="Texture2D" uid="uid://4fyb2nlju6fb" path="res://Assets/Xs/Unknown-2.jpeg" id="3_ljpq7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x8eyf"]
+atlas = ExtResource("1_lla21")
+region = Rect2(0, 0, 225, 225)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfmxc"]
+atlas = ExtResource("2_spi8h")
+region = Rect2(0, 0, 360, 360)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o771c"]
+atlas = ExtResource("3_ljpq7")
+region = Rect2(0, 0, 225, 225)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7iupu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x8eyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfmxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o771c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="wrong" type="Node2D"]
+script = ExtResource("1_spi8h")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7iupu")
+autoplay = "default"
+frame = 2
+frame_progress = 0.100545

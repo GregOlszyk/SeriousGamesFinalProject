@@ -3,6 +3,7 @@ extends RigidBody2D
 @export var recyclable_sprites : Array[AtlasTexture]
 @export var trash_sprites : Array[AtlasTexture]
 @export var sparkle : PackedScene
+@export var wrong : PackedScene
 @onready var sprite = $Sprite2D
 
 var is_recyclable : bool
@@ -35,5 +36,15 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 		body.add_child(obj)
 		obj.position.x = 0
 		obj.position.y = 0
+	if body.is_in_group("Recycle") and not is_recyclable:
+		var ob = wrong.instantiate()
+		body.add_child(ob)
+		ob.position.x = 0
+		ob.position.y = 0
+	if body.is_in_group("Trash") and is_recyclable:
+		var ob = wrong.instantiate()
+		body.add_child(ob)
+		ob.position.x = 0
+		ob.position.y = 0
 	if body.is_in_group("Recycle") or body.is_in_group("Trash"):
 		queue_free()
