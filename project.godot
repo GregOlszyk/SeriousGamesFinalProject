@@ -20,6 +20,10 @@ config/icon="res://icon.svg"
 
 Global="*res://Main Game/global.gd"
 
+[display]
+
+window/stretch/mode="canvas_items"
+
 [input]
 
 p1_left={
