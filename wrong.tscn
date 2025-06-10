@@ -1,20 +1,33 @@
-[gd_scene load_steps=9 format=3 uid="uid://c1alt0fv2li3u"]
+[gd_scene load_steps=11 format=3 uid="uid://c1alt0fv2li3u"]
 
-[ext_resource type="Texture2D" uid="uid://dwcsithae3usx" path="res://Assets/Xs/images.png" id="1_lla21"]
 [ext_resource type="Script" uid="uid://daepa55r8mtgb" path="res://wrong.gd" id="1_spi8h"]
-[ext_resource type="Texture2D" uid="uid://0dhf7mb6yfwl" path="res://Assets/Xs/png-transparent-orange-x-sign-computer-icons-x-mark-red-x-mark-miscellaneous-angle-text-thumbnail.png" id="2_spi8h"]
-[ext_resource type="Texture2D" uid="uid://4fyb2nlju6fb" path="res://Assets/Xs/Unknown-2.jpeg" id="3_ljpq7"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0thob"]
+load_path = "res://.godot/imported/images.png-19b855dda4ac31378d58163204b5bd98.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x8eyf"]
-atlas = ExtResource("1_lla21")
+atlas = SubResource("CompressedTexture2D_0thob")
 region = Rect2(0, 0, 225, 225)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0mrd7"]
+load_path = "res://.godot/imported/png-transparent-orange-x-sign-computer-icons-x-mark-red-x-mark-miscellaneous-angle-text-thumbnail.png-2837b294f1f156521e489c00c250c451.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_lfmxc"]
-atlas = ExtResource("2_spi8h")
+atlas = SubResource("CompressedTexture2D_0mrd7")
 region = Rect2(0, 0, 360, 360)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lla21"]
+load_path = "res://.godot/imported/Unknown-2.jpeg-c3d2f11d9d759ceebc25cacfcb0236bc.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_o771c"]
-atlas = ExtResource("3_ljpq7")
+atlas = SubResource("CompressedTexture2D_lla21")
+region = Rect2(0, 0, 225, 225)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_spi8h"]
+load_path = "res://.godot/imported/project.jpg-d2b78c70bcb43991d284acfc638501c4.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljpq7"]
+atlas = SubResource("CompressedTexture2D_spi8h")
 region = Rect2(0, 0, 225, 225)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7iupu"]
@@ -28,6 +41,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_o771c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljpq7")
 }],
 "loop": true,
 "name": &"default",
@@ -40,5 +56,4 @@ script = ExtResource("1_spi8h")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_7iupu")
 autoplay = "default"
-frame = 2
-frame_progress = 0.100545
+frame_progress = 0.921543
