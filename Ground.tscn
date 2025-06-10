@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsp2we7ptkv7t"]
+
+[ext_resource type="Script" uid="uid://5m5es6ytmue5" path="res://collision_shape_2d.gd" id="1_dfy80"]
+[ext_resource type="Script" uid="uid://ugaxjq5vk23l" path="res://ground.gd" id="1_m36aa"]
+[ext_resource type="Texture2D" uid="uid://b87ersj4llaib" path="res://Assets/DirtAndStonesB_S.jpg" id="1_tycio"]
+[ext_resource type="PackedScene" uid="uid://drfriqd7r4t8f" path="res://explosion.tscn" id="2_js862"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m36aa"]
+size = Vector2(5197, 173)
+
+[node name="Ground" type="Area2D"]
+script = ExtResource("1_m36aa")
+ExplosionScene = ExtResource("2_js862")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2586, 96)
+scale = Vector2(2.52051, 0.13022)
+texture = ExtResource("1_tycio")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2589.5, 92)
+shape = SubResource("RectangleShape2D_m36aa")
+script = ExtResource("1_dfy80")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

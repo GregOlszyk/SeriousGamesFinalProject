@@ -1,15 +1,29 @@
-[gd_scene load_steps=5 format=3 uid="uid://cqqi51jp21cbl"]
+[gd_scene load_steps=9 format=3 uid="uid://cqqi51jp21cbl"]
 
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
+[ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://Assets/sci_fi_bg1.jpg" id="1_n8baw"]
+[ext_resource type="Script" uid="uid://col4wqfovrubs" path="res://Main Game/main.gd" id="1_olwmy"]
 [ext_resource type="PackedScene" uid="uid://eoxvlvj65alt" path="res://Trash/trash.tscn" id="2_x6ho8"]
 [ext_resource type="PackedScene" uid="uid://cv6ymigjviy3g" path="res://Player/player_bin.tscn" id="3_lp10x"]
 [ext_resource type="PackedScene" uid="uid://clr2po0vepdae" path="res://Player/player_bin2.tscn" id="4_n8baw"]
+[ext_resource type="PackedScene" uid="uid://bsp2we7ptkv7t" path="res://Ground.tscn" id="7_vaqtm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_olwmy"]
+texture = ExtResource("1_n8baw")
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_olwmy")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(1.23849, 4.55467)
 zoom = Vector2(0.25, 0.25)
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -2295.0
+offset_top = -1289.0
+offset_right = 2311.0
+offset_bottom = 1286.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_olwmy")
 
 [node name="Spawner" parent="." instance=ExtResource("1_mbbgn")]
 position = Vector2(0, -1253)
@@ -22,3 +36,6 @@ position = Vector2(1, 1)
 
 [node name="PlayerBin2" parent="." instance=ExtResource("4_n8baw")]
 position = Vector2(-12, 1125)
+
+[node name="Ground" parent="." instance=ExtResource("7_vaqtm")]
+position = Vector2(-2343, 1291)
