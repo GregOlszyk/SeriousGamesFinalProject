@@ -59,8 +59,7 @@ theme_override_font_sizes/font_size = 20
 text = "Every piece of garbage you sorted 
 today is a step toward a cleaner 
 Earth, healthier oceans, 
-and a better future for everyone. 
-                 🌍♻️"
+and a better future for everyone. "
 
 [node name="Label4" type="Label" parent="."]
 layout_mode = 0
