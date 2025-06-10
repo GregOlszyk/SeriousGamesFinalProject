@@ -1,8 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://culej3q5g2qrc"]
+[gd_scene load_steps=10 format=3 uid="uid://culej3q5g2qrc"]
 
 [ext_resource type="Script" uid="uid://bg1blalperl1b" path="res://control.gd" id="1_8ykj4"]
 [ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://sci_fi_bg1.jpg" id="2_cei2k"]
 [ext_resource type="PackedScene" uid="uid://cqqi51jp21cbl" path="res://Main Game/main.tscn" id="2_ykdfq"]
+[ext_resource type="Texture2D" uid="uid://dtlyk3cchj5is" path="res://Assets/dumpster1.png" id="4_17p3c"]
+[ext_resource type="Script" uid="uid://cu12i218ur3l5" path="res://Title Screen/dumpster_1.gd" id="5_4i411"]
+[ext_resource type="Texture2D" uid="uid://lwvinn4d4ca5" path="res://Assets/dumpster2.png" id="6_uca3a"]
+[ext_resource type="Script" uid="uid://bst484io2ppmg" path="res://Title Screen/dumpster_2.gd" id="7_4i411"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qtu10"]
 texture = ExtResource("2_cei2k")
@@ -34,6 +38,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_qtu10")
+
+[node name="Dumpster1" type="Sprite2D" parent="."]
+position = Vector2(191, 222)
+scale = Vector2(0.48, 0.454)
+texture = ExtResource("4_17p3c")
+script = ExtResource("5_4i411")
+
+[node name="Dumpster2" type="Sprite2D" parent="."]
+position = Vector2(972, 397)
+scale = Vector2(0.48, 0.48)
+texture = ExtResource("6_uca3a")
+script = ExtResource("7_4i411")
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 1
