@@ -1,8 +1,10 @@
-[gd_scene load_steps=14 format=3 uid="uid://eoxvlvj65alt"]
+[gd_scene load_steps=16 format=3 uid="uid://eoxvlvj65alt"]
 
 [ext_resource type="Script" uid="uid://b66utomfl7rur" path="res://Trash/trash.gd" id="1_6spm4"]
 [ext_resource type="Texture2D" uid="uid://bihsrguig6agm" path="res://Assets/recycle_items.png" id="2_yuaj4"]
 [ext_resource type="Texture2D" uid="uid://cb842d77pt28k" path="res://Assets/Kelvana_E.png" id="3_ro4gh"]
+[ext_resource type="PackedScene" path="res://Effects/sparkle.tscn" id="4_j04y3"]
+[ext_resource type="PackedScene" uid="uid://c4q6gxy3hj1qp" path="res://Effects/wrong.tscn" id="5_6viqk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ro4gh"]
 atlas = ExtResource("2_yuaj4")
@@ -46,6 +48,8 @@ radius = 30.0
 script = ExtResource("1_6spm4")
 recyclable_sprites = Array[AtlasTexture]([SubResource("AtlasTexture_ro4gh"), SubResource("AtlasTexture_sdlbl"), SubResource("AtlasTexture_j04y3"), SubResource("AtlasTexture_uci7m")])
 trash_sprites = Array[AtlasTexture]([SubResource("AtlasTexture_6viqk"), SubResource("AtlasTexture_xdn4m"), SubResource("AtlasTexture_wyeik"), SubResource("AtlasTexture_l6yur")])
+collect_effect = ExtResource("4_j04y3")
+wrong_effect = ExtResource("5_6viqk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

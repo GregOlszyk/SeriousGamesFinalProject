@@ -8,6 +8,8 @@ var is_recyclable : bool
 @export var num_sprites = 4
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var main_game = get_parent()
+@export var collect_effect : PackedScene
+@export var wrong_effect : PackedScene
 
 func _ready():
 	# randomly chooses if the trash is recyclable
@@ -24,13 +26,20 @@ func _physics_process(delta):
 
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
+	var obj
 	if body is CharacterBody2D:
 		if body.is_in_group("Recycle") and is_recyclable:
+			obj = collect_effect.instantiate()
 			Global.recycle_score += 1
 			main_game.play_collect_sound()
 		elif body.is_in_group("Trash") and !is_recyclable:
+			obj = collect_effect.instantiate()
 			Global.trash_score += 1
 			main_game.play_collect_sound()
 		else:
+			obj = wrong_effect.instantiate()
 			main_game.take_damage()
+		body.add_child(obj)
+		obj.position.x = 0
+		obj.position.y = 0
 		queue_free()

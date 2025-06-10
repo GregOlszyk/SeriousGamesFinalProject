@@ -1,0 +1,52 @@
+[gd_scene load_steps=10 format=3 uid="uid://c4q6gxy3hj1qp"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0thob"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x8eyf"]
+atlas = SubResource("CompressedTexture2D_0thob")
+region = Rect2(0, 0, 225, 225)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0mrd7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfmxc"]
+atlas = SubResource("CompressedTexture2D_0mrd7")
+region = Rect2(0, 0, 360, 360)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lla21"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o771c"]
+atlas = SubResource("CompressedTexture2D_lla21")
+region = Rect2(0, 0, 225, 225)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_spi8h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljpq7"]
+atlas = SubResource("CompressedTexture2D_spi8h")
+region = Rect2(0, 0, 225, 225)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7iupu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x8eyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfmxc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o771c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ljpq7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="wrong" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7iupu")
+autoplay = "default"
+frame_progress = 0.921543
