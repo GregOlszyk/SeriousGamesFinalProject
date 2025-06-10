@@ -38,4 +38,4 @@ position = Vector2(-10, -240)
 position = Vector2(7, 696)
 
 [node name="Ground" parent="." instance=ExtResource("7_vaqtm")]
-position = Vector2(-2370, 864)
+position = Vector2(-2348, 957)

@@ -93,8 +93,8 @@ animations = [{
 script = ExtResource("1_j4sxf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(222, 195)
-scale = Vector2(5.625, 5.0625)
+position = Vector2(151.5, 127.5)
+scale = Vector2(4.15625, 3.65625)
 sprite_frames = SubResource("SpriteFrames_7rlbx")
 animation = &"explosion"
 frame = 10
