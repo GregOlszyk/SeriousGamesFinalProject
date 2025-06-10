@@ -33,4 +33,8 @@ func _process(delta):
 	trash_label.text = str("Trash Score: ", Global.trash_score)
 
 
+func _on_ground_area_entered(area: Area2D) -> void:
+	if area.is_in_group("Garbage"):
+		var obj = area.wrong_effect.instantiate()
+		area.add_child(obj)
 		

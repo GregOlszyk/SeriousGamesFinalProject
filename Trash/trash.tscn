@@ -44,7 +44,7 @@ radius = 13.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_yuaj4"]
 radius = 30.0
 
-[node name="Trash" type="RigidBody2D"]
+[node name="Trash" type="RigidBody2D" groups=["Garbage"]]
 script = ExtResource("1_6spm4")
 recyclable_sprites = Array[AtlasTexture]([SubResource("AtlasTexture_ro4gh"), SubResource("AtlasTexture_sdlbl"), SubResource("AtlasTexture_j04y3"), SubResource("AtlasTexture_uci7m")])
 trash_sprites = Array[AtlasTexture]([SubResource("AtlasTexture_6viqk"), SubResource("AtlasTexture_xdn4m"), SubResource("AtlasTexture_wyeik"), SubResource("AtlasTexture_l6yur")])
@@ -65,5 +65,4 @@ scale = Vector2(5, 5)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
 shape = SubResource("CircleShape2D_yuaj4")
 
-[connection signal="area_entered" from="Hitbox" to="." method="_on_hitbox_area_entered"]
 [connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

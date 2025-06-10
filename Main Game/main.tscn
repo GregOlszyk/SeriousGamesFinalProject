@@ -80,9 +80,11 @@ layout_mode = 2
 stream = ExtResource("12_fm8vk")
 autoplay = true
 
-[node name="Ground" type="Area2D" parent="." groups=["Ground"]]
+[node name="Ground" type="Area2D" parent="."]
 position = Vector2(4, 1344)
 scale = Vector2(2.31091, -2.07302)
 
 [node name="Hitbox" type="CollisionShape2D" parent="Ground"]
 shape = SubResource("RectangleShape2D_8w8q8")
+
+[connection signal="area_entered" from="Ground" to="." method="_on_ground_area_entered"]
