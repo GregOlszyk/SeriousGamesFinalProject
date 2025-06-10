@@ -22,6 +22,8 @@ Global="*res://Main Game/global.gd"
 
 [display]
 
+window/size/viewport_width=700
+window/size/viewport_height=1100
 window/stretch/mode="canvas_items"
 
 [input]

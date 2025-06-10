@@ -37,32 +37,32 @@ spawn_area_width = 2000
 y_position = -1250
 
 [node name="PlayerBin" parent="." instance=ExtResource("3_lp10x")]
-position = Vector2(5, 425)
+position = Vector2(0, 1198)
 
 [node name="PlayerBin2" parent="." instance=ExtResource("4_n8baw")]
-position = Vector2(13, 1021)
+position = Vector2(-14, 1911)
 
 [node name="Recycle Label" type="Label" parent="."]
-offset_left = -2222.0
-offset_top = -1232.0
-offset_right = -811.0
-offset_bottom = -959.0
+offset_left = -1520.0
+offset_top = -2356.0
+offset_right = 5.0
+offset_bottom = -2083.0
 text = "Recycle Score: 0"
 label_settings = ExtResource("6_e36ys")
 
 [node name="Trash Label" type="Label" parent="."]
-offset_left = -2214.0
-offset_top = -952.0
-offset_right = -982.0
-offset_bottom = -679.0
+offset_left = -1491.0
+offset_top = -2038.0
+offset_right = -145.0
+offset_bottom = -1765.0
 text = "Trash Score: 0"
 label_settings = ExtResource("7_rbewq")
 
 [node name="HealthBar" type="HBoxContainer" parent="."]
-offset_left = 1575.0
-offset_top = -1236.0
-offset_right = 1703.0
-offset_bottom = -1196.0
+offset_left = 802.0
+offset_top = -2297.0
+offset_right = 930.0
+offset_bottom = -2257.0
 scale = Vector2(5, 5)
 
 [node name="Heart" parent="HealthBar" instance=ExtResource("9_rbewq")]
@@ -81,7 +81,7 @@ stream = ExtResource("12_fm8vk")
 autoplay = true
 
 [node name="Ground" type="Area2D" parent="."]
-position = Vector2(4, 1344)
+position = Vector2(10, 2350)
 scale = Vector2(2.31091, -2.07302)
 
 [node name="Hitbox" type="CollisionShape2D" parent="Ground"]

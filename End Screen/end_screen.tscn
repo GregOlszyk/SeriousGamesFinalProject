@@ -32,29 +32,29 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 381.0
-offset_top = 53.0
-offset_right = 751.0
-offset_bottom = 140.0
+offset_left = 161.0
+offset_top = 39.0
+offset_right = 531.0
+offset_bottom = 126.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 63
 text = "Game Over!"
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 257.0
-offset_top = 167.0
-offset_right = 909.0
-offset_bottom = 203.0
+offset_left = 57.0
+offset_top = 164.0
+offset_right = 709.0
+offset_bottom = 200.0
 theme_override_font_sizes/font_size = 26
 text = "You collected \"\" pieces of trash and \"\" recyclables"
 
 [node name="Label3" type="Label" parent="."]
 layout_mode = 0
-offset_left = 807.0
-offset_top = 249.0
-offset_right = 1323.0
-offset_bottom = 421.0
+offset_left = 169.0
+offset_top = 485.0
+offset_right = 685.0
+offset_bottom = 657.0
 theme_override_font_sizes/font_size = 20
 text = "Every piece of garbage you sorted 
 today is a step toward a cleaner 
@@ -63,10 +63,10 @@ and a better future for everyone. "
 
 [node name="Label4" type="Label" parent="."]
 layout_mode = 0
-offset_left = 22.0
-offset_top = 248.0
-offset_right = 692.0
-offset_bottom = 420.0
+offset_left = 222.0
+offset_top = 260.0
+offset_right = 892.0
+offset_bottom = 432.0
 theme_override_font_sizes/font_size = 19
 text = "Even in real life, small 
 actions like recycling, reducing 
@@ -76,12 +76,13 @@ make a big difference."
 
 [node name="Label5" type="Label" parent="."]
 layout_mode = 0
-offset_left = 21.0
-offset_top = 571.0
-offset_right = 1136.0
-offset_bottom = 622.0
+offset_left = 24.0
+offset_top = 943.0
+offset_right = 1139.0
+offset_bottom = 1048.0
 theme_override_font_sizes/font_size = 37
-text = "Keep sorting. Keep caring. Save the planet, one item at a time. "
+text = "Keep sorting. Keep caring. 
+Save the planet, one item at a time. "
 
 [node name="Playagain" type="Button" parent="."]
 layout_mode = 1
@@ -89,10 +90,10 @@ anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 451.0
-offset_top = 264.0
-offset_right = 673.0
-offset_bottom = 348.0
+offset_left = 221.0
+offset_top = 715.0
+offset_right = 443.0
+offset_bottom = 799.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 27

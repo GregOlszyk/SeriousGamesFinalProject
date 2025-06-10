@@ -34,10 +34,10 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_02gyh")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
-offset_left = 98.0
-offset_top = 4.0
-offset_right = 394.0
-offset_bottom = 94.0
+offset_left = 196.0
+offset_top = 16.0
+offset_right = 492.0
+offset_bottom = 106.0
 theme_override_font_sizes/font_size = 32
 text = "Recycleable Items:"
 
@@ -48,22 +48,23 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 584.0
-offset_top = -34.0
-offset_right = 826.0
-offset_bottom = 17.0
+offset_left = 62.0
+offset_top = 377.0
+offset_right = 304.0
+offset_bottom = 428.0
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 32
 text = "Trash Items:"
+horizontal_alignment = 1
 
 [node name="Dumpster1" type="Sprite2D" parent="."]
-position = Vector2(229, 121)
+position = Vector2(373, 134)
 scale = Vector2(0.544, 0.47)
 texture = ExtResource("2_te7y1")
 
 [node name="Dumpster2" type="Sprite2D" parent="."]
-position = Vector2(844, 120)
+position = Vector2(353, 571)
 scale = Vector2(0.602, 0.47)
 texture = ExtResource("3_ior13")
 
@@ -74,10 +75,10 @@ anchor_left = 3.532
 anchor_top = 3.418
 anchor_right = 3.532
 anchor_bottom = 3.418
-offset_left = -292.12
-offset_top = 278.216
-offset_right = 308.88
-offset_bottom = 341.216
+offset_left = -496.12
+offset_top = 718.216
+offset_right = 104.88
+offset_bottom = 781.216
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.207449, 0.411339, 0.986349, 1)
@@ -87,7 +88,7 @@ text = "Don't forget which is which!"
 
 [node name="Recyclable1" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(152, 259)
+position = Vector2(117, 280)
 scale = Vector2(3, 3)
 texture = ExtResource("4_k7767")
 region_enabled = true
@@ -95,7 +96,7 @@ region_rect = Rect2(2, 17, 15, 45)
 
 [node name="Recyclable2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(319, 265)
+position = Vector2(275, 278)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("4_k7767")
 region_enabled = true
@@ -103,7 +104,7 @@ region_rect = Rect2(98, 14, 51, 48)
 
 [node name="Recyclable3" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(158, 459)
+position = Vector2(623, 282)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("4_k7767")
 region_enabled = true
@@ -111,7 +112,7 @@ region_rect = Rect2(151, 34, 53, 28)
 
 [node name="Recyclable4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(345, 438)
+position = Vector2(458, 292)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("4_k7767")
 region_enabled = true
@@ -119,7 +120,7 @@ region_rect = Rect2(19, 7, 39, 55)
 
 [node name="Trash" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(847, 346)
+position = Vector2(357, 781)
 scale = Vector2(3, 3)
 texture = ExtResource("5_7r02t")
 region_enabled = true
@@ -132,10 +133,10 @@ anchor_left = 0.5
 anchor_top = 0.315
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 361.0
-offset_top = 476.28
-offset_right = 629.0
-offset_bottom = 518.0
+offset_left = 133.0
+offset_top = 904.28
+offset_right = 401.0
+offset_bottom = 946.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 42
