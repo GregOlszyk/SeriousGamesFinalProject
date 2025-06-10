@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://cudpxipmrir44"]
+
+[ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://sci_fi_bg1.jpg" id="1_osl36"]
+[ext_resource type="Texture2D" uid="uid://dtlyk3cchj5is" path="res://Assets/dumpster1.png" id="2_te7y1"]
+[ext_resource type="Texture2D" uid="uid://lwvinn4d4ca5" path="res://Assets/dumpster2.png" id="3_ior13"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_02gyh"]
+texture = ExtResource("1_osl36")
+modulate_color = Color(0.360784, 0.556863, 0.458824, 1)
+
+[node name="GameItems" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 160.0
+offset_bottom = 88.0
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_02gyh")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = 98.0
+offset_top = 4.0
+offset_right = 394.0
+offset_bottom = 94.0
+theme_override_font_sizes/font_size = 32
+text = "Recycleable Items:"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 584.0
+offset_top = -34.0
+offset_right = 826.0
+offset_bottom = 17.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Trash Items:"
+
+[node name="Dumpster1" type="Sprite2D" parent="."]
+position = Vector2(229, 121)
+scale = Vector2(0.544, 0.47)
+texture = ExtResource("2_te7y1")
+
+[node name="Dumpster2" type="Sprite2D" parent="."]
+position = Vector2(844, 120)
+scale = Vector2(0.602, 0.47)
+texture = ExtResource("3_ior13")
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.532
+anchor_top = 3.418
+anchor_right = 3.532
+anchor_bottom = 3.418
+offset_left = -292.12
+offset_top = 278.216
+offset_right = 308.88
+offset_bottom = 341.216
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.87983, 0, 0.263556, 1)
+theme_override_colors/font_outline_color = Color(0.784314, 0, 0, 1)
+theme_override_font_sizes/font_size = 45
+text = "Don't forget which is which!"

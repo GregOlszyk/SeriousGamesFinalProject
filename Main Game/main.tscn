@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cqqi51jp21cbl"]
 
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
-[ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://Assets/sci_fi_bg1.jpg" id="1_n8baw"]
+[ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://sci_fi_bg1.jpg" id="1_n8baw"]
 [ext_resource type="Script" uid="uid://col4wqfovrubs" path="res://Main Game/main.gd" id="1_olwmy"]
 [ext_resource type="PackedScene" uid="uid://eoxvlvj65alt" path="res://Trash/trash.tscn" id="2_x6ho8"]
 [ext_resource type="PackedScene" uid="uid://cv6ymigjviy3g" path="res://Player/player_bin.tscn" id="3_lp10x"]
