@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djnk7mp5yhtim"
+path="res://.godot/imported/Hit_02.mp3-bccd5ce0b817b0b5ffb6f98d2d2b114e.mp3str"
+
+[deps]
+
+source_file="res://Assets/8-Bit Sound Library/Mp3/Hit_02.mp3"
+dest_files=["res://.godot/imported/Hit_02.mp3-bccd5ce0b817b0b5ffb6f98d2d2b114e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

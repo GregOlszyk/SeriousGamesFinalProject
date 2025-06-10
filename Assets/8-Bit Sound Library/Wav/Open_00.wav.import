@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://blgxc0tx6hdb0"
+path="res://.godot/imported/Open_00.wav-9b341d585a2818f04b3238e12a77f1a6.sample"
+
+[deps]
+
+source_file="res://Assets/8-Bit Sound Library/Wav/Open_00.wav"
+dest_files=["res://.godot/imported/Open_00.wav-9b341d585a2818f04b3238e12a77f1a6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

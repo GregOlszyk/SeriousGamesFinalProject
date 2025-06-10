@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bj037r34ct5tw"
+path="res://.godot/imported/Open_00.mp3-a140d3b91c99292a374760e99866efb0.mp3str"
+
+[deps]
+
+source_file="res://Assets/8-Bit Sound Library/Mp3/Open_00.mp3"
+dest_files=["res://.godot/imported/Open_00.mp3-a140d3b91c99292a374760e99866efb0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

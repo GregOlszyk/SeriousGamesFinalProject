@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bj5b8axo4sc3o"
+path="res://.godot/imported/Hero_Death_00.wav-eb3f77618f7ac4095e11961413c4160c.sample"
+
+[deps]
+
+source_file="res://Assets/8-Bit Sound Library/Wav/Hero_Death_00.wav"
+dest_files=["res://.godot/imported/Hero_Death_00.wav-eb3f77618f7ac4095e11961413c4160c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://6vh3bkak2v2l"
+path="res://.godot/imported/Craft_00.mp3-518b00096bd23f5f783e63af02eabcd9.mp3str"
+
+[deps]
+
+source_file="res://Assets/8-Bit Sound Library/Mp3/Craft_00.mp3"
+dest_files=["res://.godot/imported/Craft_00.mp3-518b00096bd23f5f783e63af02eabcd9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

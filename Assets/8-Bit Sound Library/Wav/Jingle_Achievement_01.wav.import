@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bnowwwd7co41u"
+path="res://.godot/imported/Jingle_Achievement_01.wav-9fa4441dc74fff7df266c551d58a15f3.sample"
+
+[deps]
+
+source_file="res://Assets/8-Bit Sound Library/Wav/Jingle_Achievement_01.wav"
+dest_files=["res://.godot/imported/Jingle_Achievement_01.wav-9fa4441dc74fff7df266c551d58a15f3.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

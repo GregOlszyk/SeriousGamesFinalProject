@@ -10,6 +10,7 @@ var hearts : Array[TextureRect]
 @onready var sound_effect_player = $"Sound Effects Player"
 
 func take_damage():
+	play_incorrect_sound()
 	health -= 1
 	hearts[health].texture = preload("res://Assets/heart_empty_16x16.png")
 	if health == 0:
@@ -17,6 +18,10 @@ func take_damage():
 
 func play_collect_sound():
 	sound_effect_player.stream = sound_effects[0]
+	sound_effect_player.play()
+	
+func play_incorrect_sound():
+	sound_effect_player.stream = sound_effects[1]
 	sound_effect_player.play()
 
 func _ready():
