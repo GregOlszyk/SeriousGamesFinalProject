@@ -35,10 +35,10 @@ spawn_area_width = 2000
 y_position = -1250
 
 [node name="PlayerBin" parent="." instance=ExtResource("3_lp10x")]
-position = Vector2(1, 358)
+position = Vector2(5, 425)
 
 [node name="PlayerBin2" parent="." instance=ExtResource("4_n8baw")]
-position = Vector2(13, 883)
+position = Vector2(13, 1021)
 
 [node name="Recycle Label" type="Label" parent="."]
 offset_left = -2222.0
@@ -75,9 +75,8 @@ layout_mode = 2
 [node name="Sound Effects Player" type="AudioStreamPlayer2D" parent="."]
 
 [node name="Ground" type="Area2D" parent="." groups=["Ground"]]
-position = Vector2(0, 1398)
+position = Vector2(4, 1344)
 scale = Vector2(2.31091, -2.07302)
 
 [node name="Hitbox" type="CollisionShape2D" parent="Ground"]
-position = Vector2(-0.865458, 60.781)
 shape = SubResource("RectangleShape2D_8w8q8")

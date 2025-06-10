@@ -26,6 +26,14 @@ func _physics_process(delta):
 
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Ground"):
+		print("Hit the ground")
+		var obj = wrong_effect.instantiate()
+		body.add_child(obj)
+		obj.position.x = 0
+		obj.position.y = 0
+		queue_free()
+	
 	if body is CharacterBody2D:
 		var obj
 		if body.is_in_group("Recycle") and is_recyclable:
@@ -43,10 +51,4 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 		obj.position.x = 0
 		obj.position.y = 0
 		queue_free()
-		
-	if body.is_in_group("Ground"):
-		var obj = wrong_effect.instantiate()
-		body.add_child(obj)
-		obj.position.x = 0
-		obj.position.y = 0
-		queue_free()
+	
