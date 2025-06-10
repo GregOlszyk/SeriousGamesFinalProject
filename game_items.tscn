@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cudpxipmrir44"]
+[gd_scene load_steps=6 format=3 uid="uid://cudpxipmrir44"]
 
 [ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://sci_fi_bg1.jpg" id="1_osl36"]
 [ext_resource type="Texture2D" uid="uid://dtlyk3cchj5is" path="res://Assets/dumpster1.png" id="2_te7y1"]
@@ -7,6 +7,13 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_02gyh"]
 texture = ExtResource("1_osl36")
 modulate_color = Color(0.360784, 0.556863, 0.458824, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_osl36"]
+bg_color = Color(0.396078, 0.188235, 0.172549, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="GameItems" type="Control"]
 layout_mode = 3
@@ -62,13 +69,23 @@ anchor_left = 3.532
 anchor_top = 3.418
 anchor_right = 3.532
 anchor_bottom = 3.418
-offset_left = -292.12
-offset_top = 278.216
-offset_right = 308.88
-offset_bottom = 341.216
+offset_left = -273.12
+offset_top = 168.216
+offset_right = 327.88
+offset_bottom = 231.216
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.87983, 0, 0.263556, 1)
 theme_override_colors/font_outline_color = Color(0.784314, 0, 0, 1)
 theme_override_font_sizes/font_size = 45
 text = "Don't forget which is which!"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 416.0
+offset_top = 554.0
+offset_right = 752.0
+offset_bottom = 626.0
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_osl36")
+text = "Back to Home"
