@@ -91,13 +91,13 @@ scale = Vector2(2.31091, -2.07302)
 [node name="Hitbox" type="CollisionShape2D" parent="Ground"]
 shape = SubResource("RectangleShape2D_8w8q8")
 
-[node name="Wall" type="RigidBody2D" parent="."]
+[node name="Wall" type="StaticBody2D" parent="."]
 position = Vector2(-1628, 989)
 
 [node name="Hitbox" type="CollisionShape2D" parent="Wall"]
 shape = SubResource("RectangleShape2D_k4dgs")
 
-[node name="Wall2" type="RigidBody2D" parent="."]
+[node name="Wall2" type="StaticBody2D" parent="."]
 position = Vector2(1628, 989)
 
 [node name="Hitbox" type="CollisionShape2D" parent="Wall2"]
