@@ -32,7 +32,7 @@ spawn_area_width = 2000
 y_position = -1250
 
 [node name="PlayerBin" parent="." instance=ExtResource("3_lp10x")]
-position = Vector2(1, 1)
+position = Vector2(1, 500)
 
 [node name="PlayerBin2" parent="." instance=ExtResource("4_n8baw")]
 position = Vector2(-12, 1125)
