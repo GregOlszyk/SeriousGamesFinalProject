@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://br11wk55n2gdm"]
+[gd_scene load_steps=11 format=3 uid="uid://br11wk55n2gdm"]
 
 [ext_resource type="Texture2D" uid="uid://dq30oui02cui4" path="res://Assets/kenney_particle-pack/PNG (Transparent)/star_02.png" id="1_ep5b2"]
+[ext_resource type="Script" uid="uid://bacfb4sf3dpwd" path="res://Effects/sparkle.gd" id="1_jpinc"]
 [ext_resource type="Texture2D" uid="uid://dw7lugp3shh1p" path="res://Assets/kenney_particle-pack/PNG (Transparent)/star_04.png" id="2_30gfy"]
 [ext_resource type="Texture2D" uid="uid://cawe3d70ilqum" path="res://Assets/kenney_particle-pack/PNG (Transparent)/star_06.png" id="3_um648"]
 [ext_resource type="Texture2D" uid="uid://c427666imtihg" path="res://Assets/kenney_particle-pack/PNG (Transparent)/star_08.png" id="4_0u6xv"]
@@ -36,12 +37,13 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gbgk7")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 8.0
 }]
 
 [node name="Sparkle" type="Node2D"]
+script = ExtResource("1_jpinc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(4, 4)

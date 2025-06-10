@@ -26,8 +26,8 @@ func _physics_process(delta):
 
 
 func _on_hitbox_body_entered(body: Node2D) -> void:
-	var obj
 	if body is CharacterBody2D:
+		var obj
 		if body.is_in_group("Recycle") and is_recyclable:
 			obj = collect_effect.instantiate()
 			Global.recycle_score += 1
