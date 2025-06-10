@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cqqi51jp21cbl"]
+[gd_scene load_steps=16 format=3 uid="uid://cqqi51jp21cbl"]
 
 [ext_resource type="Script" uid="uid://b3ecclrjnbv3b" path="res://Main Game/main.gd" id="1_e36ys"]
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
@@ -16,6 +16,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8w8q8"]
 size = Vector2(2536, 69)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k4dgs"]
+size = Vector2(120, 2895)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_e36ys")
@@ -86,5 +89,17 @@ scale = Vector2(2.31091, -2.07302)
 
 [node name="Hitbox" type="CollisionShape2D" parent="Ground"]
 shape = SubResource("RectangleShape2D_8w8q8")
+
+[node name="Wall" type="RigidBody2D" parent="."]
+position = Vector2(-1628, 989)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Wall"]
+shape = SubResource("RectangleShape2D_k4dgs")
+
+[node name="Wall2" type="RigidBody2D" parent="."]
+position = Vector2(1628, 989)
+
+[node name="Hitbox" type="CollisionShape2D" parent="Wall2"]
+shape = SubResource("RectangleShape2D_k4dgs")
 
 [connection signal="body_entered" from="Ground" to="." method="_on_ground_body_entered"]
