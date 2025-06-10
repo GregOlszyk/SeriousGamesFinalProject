@@ -1,9 +1,11 @@
 extends Control
 
 @onready var result_label = $Label2
+@onready var game_over_player = $"Game Over Player"
 
 func _ready():
 	result_label.text = str("You collected ", Global.trash_score, " pieces of trash and ", Global.recycle_score, " recyclables")
+	game_over_player.play()
 
 
 

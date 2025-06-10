@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cyiq1q1j1n4gw"]
+[gd_scene load_steps=6 format=3 uid="uid://cyiq1q1j1n4gw"]
 
 [ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://Assets/sci_fi_bg1.jpg" id="1_gjick"]
 [ext_resource type="Script" uid="uid://c2q4xiasdf07p" path="res://End Screen/end_screen.gd" id="1_qm6ii"]
+[ext_resource type="AudioStream" uid="uid://dvhaq5tvpp32x" path="res://Assets/8-bit-video-game-lose-sound-version-1-145828.mp3" id="3_ou0om"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qm6ii"]
 texture = ExtResource("1_gjick")
@@ -99,5 +100,8 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 27
 theme_override_styles/normal = SubResource("StyleBoxFlat_gjick")
 text = "Play Again!"
+
+[node name="Game Over Player" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ou0om")
 
 [connection signal="pressed" from="Playagain" to="." method="_on_playagain_pressed"]
