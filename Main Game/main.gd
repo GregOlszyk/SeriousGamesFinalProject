@@ -26,3 +26,6 @@ func _ready():
 func _process(delta):
 	recycle_label.text = str("Recycle Score: ", Global.recycle_score)
 	trash_label.text = str("Trash Score: ", Global.trash_score)
+
+
+		
