@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://cqqi51jp21cbl"]
+[gd_scene load_steps=12 format=3 uid="uid://cqqi51jp21cbl"]
 
 [ext_resource type="Script" uid="uid://b3ecclrjnbv3b" path="res://Main Game/main.gd" id="1_e36ys"]
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
 [ext_resource type="Texture2D" uid="uid://c40ivv45w65w1" path="res://Assets/background.png" id="1_vaqtm"]
 [ext_resource type="PackedScene" uid="uid://cyiq1q1j1n4gw" path="res://End Screen/end_screen.tscn" id="2_p24th"]
 [ext_resource type="PackedScene" uid="uid://eoxvlvj65alt" path="res://Trash/trash.tscn" id="2_x6ho8"]
+[ext_resource type="AudioStream" uid="uid://hoky2i7xogs0" path="res://Assets/crumple-03-40747.mp3" id="3_8w8q8"]
 [ext_resource type="PackedScene" uid="uid://cv6ymigjviy3g" path="res://Player/player_bin.tscn" id="3_lp10x"]
 [ext_resource type="PackedScene" uid="uid://clr2po0vepdae" path="res://Player/player_bin2.tscn" id="4_n8baw"]
 [ext_resource type="LabelSettings" uid="uid://dmrpyfu8nii55" path="res://Main Game/recycle_label_settings.tres" id="6_e36ys"]
@@ -14,6 +15,7 @@
 [node name="Main" type="Node2D"]
 script = ExtResource("1_e36ys")
 end_scene = ExtResource("2_p24th")
+sound_effects = Array[AudioStream]([ExtResource("3_8w8q8")])
 
 [node name="Background" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
@@ -66,3 +68,5 @@ layout_mode = 2
 
 [node name="Heart3" parent="HealthBar" instance=ExtResource("9_rbewq")]
 layout_mode = 2
+
+[node name="Sound Effects Player" type="AudioStreamPlayer2D" parent="."]

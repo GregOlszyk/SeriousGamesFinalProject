@@ -27,8 +27,10 @@ func _on_hitbox_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D:
 		if body.is_in_group("Recycle") and is_recyclable:
 			Global.recycle_score += 1
+			main_game.play_collect_sound()
 		elif body.is_in_group("Trash") and !is_recyclable:
 			Global.trash_score += 1
+			main_game.play_collect_sound()
 		else:
 			main_game.take_damage()
 		queue_free()
