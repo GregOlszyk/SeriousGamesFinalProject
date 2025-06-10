@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://cqqi51jp21cbl"]
 
-[ext_resource type="Script" uid="uid://b3ecclrjnbv3b" path="res://Main Game/main.gd" id="1_e36ys"]
+[ext_resource type="Script" path="res://Main Game/main.gd" id="1_e36ys"]
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
 [ext_resource type="Texture2D" uid="uid://c40ivv45w65w1" path="res://Assets/background.png" id="1_vaqtm"]
 [ext_resource type="PackedScene" uid="uid://cyiq1q1j1n4gw" path="res://End Screen/end_screen.tscn" id="2_p24th"]
@@ -9,9 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://cv6ymigjviy3g" path="res://Player/player_bin.tscn" id="3_lp10x"]
 [ext_resource type="AudioStream" uid="uid://bdy1p6xov5sxx" path="res://Assets/Explosion_00.mp3" id="4_k4dgs"]
 [ext_resource type="PackedScene" uid="uid://clr2po0vepdae" path="res://Player/player_bin2.tscn" id="4_n8baw"]
-[ext_resource type="LabelSettings" uid="uid://dmrpyfu8nii55" path="res://Main Game/recycle_label_settings.tres" id="6_e36ys"]
-[ext_resource type="LabelSettings" uid="uid://ddqc1vcqc2uq3" path="res://Main Game/trash_label_settings.tres" id="7_rbewq"]
-[ext_resource type="PackedScene" uid="uid://i3ul2vv3uiq2" path="res://Main Game/heart.tscn" id="9_rbewq"]
+[ext_resource type="LabelSettings" path="res://Main Game/recycle_label_settings.tres" id="6_e36ys"]
+[ext_resource type="LabelSettings" path="res://Main Game/trash_label_settings.tres" id="7_rbewq"]
+[ext_resource type="PackedScene" path="res://Main Game/heart.tscn" id="9_rbewq"]
 [ext_resource type="AudioStream" uid="uid://u8mlfeg2f6kr" path="res://Assets/Minigames soundtrack.mp3" id="12_fm8vk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8w8q8"]
@@ -27,6 +27,7 @@ scale = Vector2(2, 2)
 texture = ExtResource("1_vaqtm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+rotation = -5.77529
 scale = Vector2(1.23849, 4.55467)
 zoom = Vector2(0.225, 0.225)
 
@@ -34,7 +35,7 @@ zoom = Vector2(0.225, 0.225)
 position = Vector2(0, -1253)
 trash = ExtResource("2_x6ho8")
 spawn_area_width = 2000
-y_position = -1250
+y_position = -2000
 
 [node name="PlayerBin" parent="." instance=ExtResource("3_lp10x")]
 position = Vector2(5, 425)
