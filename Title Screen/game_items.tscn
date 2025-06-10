@@ -28,8 +28,8 @@ script = ExtResource("1_31yt1")
 
 [node name="Background" type="Panel" parent="."]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_right = 697.0
+offset_bottom = 1101.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_02gyh")
 
 [node name="Label" type="Label" parent="."]

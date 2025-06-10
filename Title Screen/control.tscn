@@ -105,16 +105,17 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -563.0
-offset_top = -112.0
-offset_right = 554.0
-offset_bottom = -11.0
+offset_left = -560.0
+offset_top = -159.0
+offset_right = 557.0
+offset_bottom = -58.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "Choose to play either by yourself or with 2 players. 
 Use A&D keys for the recycle bin and L&R arrow keys for the trash bin. 
 Move left to right picking up the correct piece of trash for each bin. 
 Avoid getting the wrong types of trash in the bins!"
+horizontal_alignment = 1
 
 [node name="Game Items" type="Button" parent="."]
 layout_mode = 1

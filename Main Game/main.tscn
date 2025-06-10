@@ -26,7 +26,8 @@ end_scene = ExtResource("2_p24th")
 sound_effects = Array[AudioStream]([ExtResource("3_8w8q8"), ExtResource("4_k4dgs")])
 
 [node name="Background" type="Sprite2D" parent="."]
-scale = Vector2(2, 2)
+position = Vector2(56.9996, -2.99974)
+scale = Vector2(2.75391, 3.16016)
 texture = ExtResource("1_vaqtm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
