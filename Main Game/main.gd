@@ -8,6 +8,7 @@ var hearts : Array[TextureRect]
 @export var end_scene : PackedScene
 @export var sound_effects : Array[AudioStream]
 @onready var sound_effect_player = $"Sound Effects Player"
+@onready var wrong_effect = preload("res://Effects/wrong.tscn")
 
 func take_damage():
 	play_incorrect_sound()
@@ -31,10 +32,10 @@ func _ready():
 func _process(delta):
 	recycle_label.text = str("Recycle Score: ", Global.recycle_score)
 	trash_label.text = str("Trash Score: ", Global.trash_score)
-
-
-func _on_ground_area_entered(area: Area2D) -> void:
-	if area.is_in_group("Garbage"):
-		var obj = area.wrong_effect.instantiate()
-		area.add_child(obj)
 		
+func _on_ground_body_entered(body: Node2D) -> void:
+	if body.is_in_group("Garbage"):
+		var obj = wrong_effect.instantiate()
+		obj.position = body.position
+		get_tree().current_scene.add_child(obj)
+		play_incorrect_sound()

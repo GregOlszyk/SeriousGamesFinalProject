@@ -87,4 +87,4 @@ scale = Vector2(2.31091, -2.07302)
 [node name="Hitbox" type="CollisionShape2D" parent="Ground"]
 shape = SubResource("RectangleShape2D_8w8q8")
 
-[connection signal="area_entered" from="Ground" to="." method="_on_ground_area_entered"]
+[connection signal="body_entered" from="Ground" to="." method="_on_ground_body_entered"]
