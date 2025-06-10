@@ -37,12 +37,13 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gbgk7")
 }],
-"loop": false,
+"loop": true,
 "name": &"default",
-"speed": 8.0
+"speed": 10.0
 }]
 
 [node name="Sparkle" type="Node2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_jpinc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
