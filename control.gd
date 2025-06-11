@@ -22,8 +22,12 @@ func _on_start_button_pressed() -> void:
 
 
 func _on_howto_play_pressed() -> void:
-	$tutorial.visible = true
-	$Fact.visible = false
+	if !$tutorial.visible:
+		$tutorial.visible = true
+		$Fact.visible = false
+	else:
+		$tutorial.visible = false
+		$Fact.visible = true
 
 func _on_game_items_pressed() -> void:
 	get_tree().change_scene_to_file("res://Title Screen/game_items.tscn")
