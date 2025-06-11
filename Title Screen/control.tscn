@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://culej3q5g2qrc"]
+[gd_scene load_steps=7 format=3 uid="uid://culej3q5g2qrc"]
 
 [ext_resource type="Script" uid="uid://bg1blalperl1b" path="res://control.gd" id="1_8ykj4"]
 [ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://Assets/sci_fi_bg1.jpg" id="2_cei2k"]
 [ext_resource type="PackedScene" uid="uid://cqqi51jp21cbl" path="res://Main Game/main.tscn" id="2_ykdfq"]
+[ext_resource type="PackedScene" uid="uid://d2b5m68d7kfwe" path="res://Main Game/quit_button.tscn" id="4_ykdfq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qtu10"]
 texture = ExtResource("2_cei2k")
@@ -134,6 +135,20 @@ theme_override_font_sizes/font_size = 42
 theme_override_styles/normal = SubResource("StyleBoxFlat_62e2m")
 text = "Game Items
 "
+
+[node name="Quit Button" parent="." instance=ExtResource("4_ykdfq")]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 514.0
+offset_top = 962.0
+offset_right = 643.0
+offset_bottom = 1020.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="HowtoPlay" to="." method="_on_howto_play_pressed"]
