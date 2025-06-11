@@ -13,3 +13,7 @@ func _on_playagain_pressed() -> void:
 	Global.recycle_score = 0
 	Global.trash_score = 0
 	get_tree().change_scene_to_file("res://Main Game/main.tscn")
+
+
+func _on_home_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://Title Screen/control.tscn")

@@ -40,6 +40,7 @@ offset_right = 492.0
 offset_bottom = 106.0
 theme_override_font_sizes/font_size = 32
 text = "Recycleable Items:"
+horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 1
@@ -59,7 +60,7 @@ text = "Trash Items:"
 horizontal_alignment = 1
 
 [node name="Dumpster1" type="Sprite2D" parent="."]
-position = Vector2(373, 134)
+position = Vector2(344, 134)
 scale = Vector2(0.544, 0.47)
 texture = ExtResource("2_te7y1")
 
@@ -75,9 +76,9 @@ anchor_left = 3.532
 anchor_top = 3.418
 anchor_right = 3.532
 anchor_bottom = 3.418
-offset_left = -496.12
+offset_left = -512.12
 offset_top = 718.216
-offset_right = 104.88
+offset_right = 88.88
 offset_bottom = 781.216
 grow_horizontal = 0
 grow_vertical = 2
@@ -85,10 +86,11 @@ theme_override_colors/font_color = Color(0.207449, 0.411339, 0.986349, 1)
 theme_override_colors/font_outline_color = Color(0.784314, 0, 0, 1)
 theme_override_font_sizes/font_size = 45
 text = "Don't forget which is which!"
+horizontal_alignment = 1
 
 [node name="Recyclable1" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(117, 280)
+position = Vector2(77, 293)
 scale = Vector2(3, 3)
 texture = ExtResource("4_k7767")
 region_enabled = true
@@ -96,7 +98,7 @@ region_rect = Rect2(2, 17, 15, 45)
 
 [node name="Recyclable2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(275, 278)
+position = Vector2(252, 297)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("4_k7767")
 region_enabled = true
@@ -104,7 +106,7 @@ region_rect = Rect2(98, 14, 51, 48)
 
 [node name="Recyclable3" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(623, 282)
+position = Vector2(596, 295)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("4_k7767")
 region_enabled = true
@@ -112,7 +114,7 @@ region_rect = Rect2(151, 34, 53, 28)
 
 [node name="Recyclable4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(458, 292)
+position = Vector2(435, 288)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("4_k7767")
 region_enabled = true
