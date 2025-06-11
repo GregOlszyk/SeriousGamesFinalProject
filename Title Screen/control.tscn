@@ -1,21 +1,29 @@
-[gd_scene load_steps=7 format=3 uid="uid://culej3q5g2qrc"]
+[gd_scene load_steps=9 format=3 uid="uid://culej3q5g2qrc"]
 
 [ext_resource type="Script" uid="uid://bg1blalperl1b" path="res://control.gd" id="1_8ykj4"]
 [ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://Assets/sci_fi_bg1.jpg" id="2_cei2k"]
 [ext_resource type="PackedScene" uid="uid://cqqi51jp21cbl" path="res://Main Game/main.tscn" id="2_ykdfq"]
+[ext_resource type="FontFile" uid="uid://dmpj5oc48ec2l" path="res://Assets/Jersey15-Regular.ttf" id="4_em4te"]
 [ext_resource type="PackedScene" uid="uid://d2b5m68d7kfwe" path="res://Main Game/quit_button.tscn" id="4_ykdfq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qtu10"]
 texture = ExtResource("2_cei2k")
-modulate_color = Color(0.362644, 0.557486, 0.46036, 1)
+modulate_color = Color(0.431373, 0.945098, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
-bg_color = Color(0.395906, 0.189942, 0.172202, 1)
+bg_color = Color(0.580392, 0.913725, 0.941176, 1)
 corner_radius_top_left = 16
 corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 shadow_size = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_em4te"]
+bg_color = Color(0.580392, 0.913725, 0.941176, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -49,7 +57,9 @@ offset_right = 126.0
 offset_bottom = -106.38
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 42
+theme_override_colors/font_color = Color(0.180392, 0.560784, 0.717647, 1)
+theme_override_fonts/font = ExtResource("4_em4te")
+theme_override_font_sizes/font_size = 55
 theme_override_styles/normal = SubResource("StyleBoxFlat_62e2m")
 text = "Start Game
 "
@@ -67,6 +77,8 @@ offset_right = 124.0
 offset_bottom = 116.62
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.180392, 0.560784, 0.717647, 1)
+theme_override_fonts/font = ExtResource("4_em4te")
 theme_override_font_sizes/font_size = 42
 theme_override_styles/normal = SubResource("StyleBoxFlat_62e2m")
 text = "How to Play?
@@ -77,12 +89,13 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -192.0
+offset_left = -163.0
 offset_top = 23.0
-offset_right = 205.0
+offset_right = 234.0
 offset_bottom = 126.0
 grow_horizontal = 2
-theme_override_font_sizes/font_size = 75
+theme_override_fonts/font = ExtResource("4_em4te")
+theme_override_font_sizes/font_size = 81
 text = "Sort It Out!"
 
 [node name="Label2" type="Label" parent="."]
@@ -90,13 +103,14 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -151.0
-offset_top = 140.0
-offset_right = 194.0
-offset_bottom = 187.0
+offset_left = -166.0
+offset_top = 139.0
+offset_right = 179.0
+offset_bottom = 186.0
 grow_horizontal = 2
-theme_override_font_sizes/font_size = 30
-text = "Team Up to Clean Up"
+theme_override_fonts/font = ExtResource("4_em4te")
+theme_override_font_sizes/font_size = 45
+text = "Team Up to Clean Up!"
 
 [node name="tutorial" type="Label" parent="."]
 visible = false
@@ -106,12 +120,14 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -560.0
-offset_top = -159.0
-offset_right = 557.0
-offset_bottom = -58.0
+offset_left = -553.0
+offset_top = -148.0
+offset_right = 564.0
+offset_bottom = -35.0
 grow_horizontal = 2
 grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_em4te")
+theme_override_font_sizes/font_size = 26
 text = "Choose to play either by yourself or with 2 players. 
 Use A&D keys for the recycle bin and L&R arrow keys for the trash bin. 
 Move left to right picking up the correct piece of trash for each bin. 
@@ -131,6 +147,8 @@ offset_right = 125.0
 offset_bottom = 320.62
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.180392, 0.560784, 0.717647, 1)
+theme_override_fonts/font = ExtResource("4_em4te")
 theme_override_font_sizes/font_size = 42
 theme_override_styles/normal = SubResource("StyleBoxFlat_62e2m")
 text = "Game Items
@@ -143,12 +161,15 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-offset_left = 533.0
-offset_top = 807.0
-offset_right = 662.0
-offset_bottom = 865.0
+offset_left = 618.0
+offset_top = 33.0
+offset_right = 690.0
+offset_bottom = 76.0
 grow_horizontal = 1
 grow_vertical = 1
+theme_override_colors/font_color = Color(0.180392, 0.560784, 0.717647, 1)
+theme_override_fonts/font = ExtResource("4_em4te")
+theme_override_styles/normal = SubResource("StyleBoxFlat_em4te")
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="HowtoPlay" to="." method="_on_howto_play_pressed"]

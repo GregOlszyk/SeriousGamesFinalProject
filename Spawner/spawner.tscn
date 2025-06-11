@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b8wphxhwoylwy"]
 
 [ext_resource type="Script" uid="uid://s0r6uqfbwh2x" path="res://Spawner/spawner.gd" id="1_38tkg"]
-[ext_resource type="PackedScene" uid="uid://bsh2m0q4fwh6u" path="res://Spawner/test_object.tscn" id="2_38tkg"]
+[ext_resource type="PackedScene" path="res://Spawner/test_object.tscn" id="2_38tkg"]
 
 [node name="Spawner" type="Node2D"]
 script = ExtResource("1_38tkg")
