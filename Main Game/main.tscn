@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cqqi51jp21cbl"]
+[gd_scene load_steps=19 format=3 uid="uid://cqqi51jp21cbl"]
 
 [ext_resource type="Script" uid="uid://b3ecclrjnbv3b" path="res://Main Game/main.gd" id="1_e36ys"]
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
@@ -14,12 +14,26 @@
 [ext_resource type="PackedScene" uid="uid://i3ul2vv3uiq2" path="res://Main Game/heart.tscn" id="9_rbewq"]
 [ext_resource type="AudioStream" uid="uid://u8mlfeg2f6kr" path="res://Assets/Minigames soundtrack.mp3" id="12_fm8vk"]
 [ext_resource type="PackedScene" uid="uid://d2b5m68d7kfwe" path="res://Main Game/quit_button.tscn" id="14_oud60"]
+[ext_resource type="FontFile" uid="uid://bc1c4xtofc6rr" path="res://End Screen/Jersey15-Regular.ttf" id="15_chk0l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8w8q8"]
 size = Vector2(2536, 69)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k4dgs"]
 size = Vector2(120, 2895)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s57dr"]
+bg_color = Color(0.580392, 0.913725, 0.941176, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.762663, 0.207493, 0.160798, 1)
+border_blend = true
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_e36ys")
@@ -52,6 +66,7 @@ offset_left = -1520.0
 offset_top = -2356.0
 offset_right = 5.0
 offset_bottom = -2083.0
+theme_override_fonts/font = ExtResource("15_chk0l")
 text = "Recycle Score: 0"
 label_settings = ExtResource("6_e36ys")
 
@@ -60,6 +75,7 @@ offset_left = -1491.0
 offset_top = -2038.0
 offset_right = -145.0
 offset_bottom = -1765.0
+theme_override_fonts/font = ExtResource("15_chk0l")
 text = "Trash Score: 0"
 label_settings = ExtResource("7_rbewq")
 
@@ -109,6 +125,9 @@ offset_left = 808.0
 offset_top = -2036.0
 offset_right = 1407.0
 offset_bottom = -1771.0
-theme_override_font_sizes/font_size = 120
+theme_override_colors/font_color = Color(0.180392, 0.560784, 0.717647, 1)
+theme_override_fonts/font = ExtResource("15_chk0l")
+theme_override_font_sizes/font_size = 130
+theme_override_styles/normal = SubResource("StyleBoxFlat_s57dr")
 
 [connection signal="body_entered" from="Ground" to="." method="_on_ground_body_entered"]

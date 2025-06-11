@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d2b5m68d7kfwe"]
 
-[ext_resource type="Script" uid="uid://ckgp1d6qkn77o" path="res://Main Game/quit_button.gd" id="1_sfmen"]
+[ext_resource type="Script" path="res://Main Game/quit_button.gd" id="1_sfmen"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62e2m"]
 bg_color = Color(0.395906, 0.189942, 0.172202, 1)
