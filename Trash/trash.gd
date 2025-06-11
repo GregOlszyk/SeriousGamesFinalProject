@@ -4,6 +4,7 @@ extends RigidBody2D
 @export var trash_sprites : Array[AtlasTexture]
 @onready var sprite = $Sprite2D
 var is_recyclable : bool
+var interval : int = 25
 # the size of each sprite array should be the same
 @export var num_sprites = 4
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -20,6 +21,8 @@ func _ready():
 		sprite.texture = recyclable_sprites[sprite_index]
 	else:
 		sprite.texture = trash_sprites[sprite_index]
+	if (Global.recycle_score % interval == 0 or Global.trash_score % interval ==0):
+		main_game.heal()
 
 func _physics_process(delta):
 	linear_velocity.y += gravity * delta

@@ -17,6 +17,10 @@ func take_damage():
 	if health == 0:
 		get_tree().call_deferred("change_scene_to_packed", end_scene)
 
+func heal():
+	if health < 3:
+		health+=1
+
 func play_collect_sound():
 	sound_effect_player.stream = sound_effects[0]
 	sound_effect_player.play()
