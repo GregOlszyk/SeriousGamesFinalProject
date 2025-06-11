@@ -5,7 +5,7 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$tutorial.visible = false
-	
+	$Fact.visible = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -23,7 +23,7 @@ func _on_start_button_pressed() -> void:
 
 func _on_howto_play_pressed() -> void:
 	$tutorial.visible = true
-
+	$Fact.visible = false
 
 func _on_game_items_pressed() -> void:
 	get_tree().change_scene_to_file("res://Title Screen/game_items.tscn")

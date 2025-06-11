@@ -171,6 +171,19 @@ theme_override_colors/font_color = Color(0.180392, 0.560784, 0.717647, 1)
 theme_override_fonts/font = ExtResource("4_em4te")
 theme_override_styles/normal = SubResource("StyleBoxFlat_em4te")
 
+[node name="Fact" type="Label" parent="."]
+layout_mode = 0
+offset_left = -51.0
+offset_top = 999.0
+offset_right = 761.0
+offset_bottom = 1095.0
+theme_override_fonts/font = ExtResource("4_em4te")
+theme_override_font_sizes/font_size = 25
+text = "Only about 9% of the world’s plastic is ever recycled — the other 91% ends 
+up polluting our environment, harming wildlife, and breaking down into 
+microplastics that contaminate our water and food."
+horizontal_alignment = 1
+
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="HowtoPlay" to="." method="_on_howto_play_pressed"]
 [connection signal="pressed" from="Game Items" to="." method="_on_game_items_pressed"]
