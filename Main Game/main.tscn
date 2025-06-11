@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cqqi51jp21cbl"]
+[gd_scene load_steps=17 format=3 uid="uid://cqqi51jp21cbl"]
 
 [ext_resource type="Script" uid="uid://b3ecclrjnbv3b" path="res://Main Game/main.gd" id="1_e36ys"]
 [ext_resource type="PackedScene" uid="uid://b8wphxhwoylwy" path="res://Spawner/spawner.tscn" id="1_mbbgn"]
@@ -13,6 +13,7 @@
 [ext_resource type="LabelSettings" uid="uid://ddqc1vcqc2uq3" path="res://Main Game/trash_label_settings.tres" id="7_rbewq"]
 [ext_resource type="PackedScene" uid="uid://i3ul2vv3uiq2" path="res://Main Game/heart.tscn" id="9_rbewq"]
 [ext_resource type="AudioStream" uid="uid://u8mlfeg2f6kr" path="res://Assets/Minigames soundtrack.mp3" id="12_fm8vk"]
+[ext_resource type="PackedScene" uid="uid://d2b5m68d7kfwe" path="res://Main Game/quit_button.tscn" id="14_oud60"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8w8q8"]
 size = Vector2(2536, 69)
@@ -102,5 +103,12 @@ position = Vector2(1628, 989)
 
 [node name="Hitbox" type="CollisionShape2D" parent="Wall2"]
 shape = SubResource("RectangleShape2D_k4dgs")
+
+[node name="Quit Button" parent="." instance=ExtResource("14_oud60")]
+offset_left = 808.0
+offset_top = -2036.0
+offset_right = 1407.0
+offset_bottom = -1771.0
+theme_override_font_sizes/font_size = 120
 
 [connection signal="body_entered" from="Ground" to="." method="_on_ground_body_entered"]
