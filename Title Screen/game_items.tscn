@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c0h13lte7t4iq"]
+[gd_scene load_steps=12 format=3 uid="uid://c0h13lte7t4iq"]
 
 [ext_resource type="Script" uid="uid://rg4anbqurwq0" path="res://Title Screen/game_items.gd" id="1_31yt1"]
 [ext_resource type="Texture2D" uid="uid://civ7h4dsjww7q" path="res://Assets/sci_fi_bg1.jpg" id="1_osl36"]
@@ -11,6 +11,30 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_02gyh"]
 texture = ExtResource("1_osl36")
 modulate_color = Color(0.431373, 0.945098, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s01d7"]
+bg_color = Color(0.580392, 0.913725, 0.941176, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e47gs"]
+bg_color = Color(0.580392, 0.913725, 0.941176, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7r02t"]
 bg_color = Color(0.580392, 0.913725, 0.941176, 1)
@@ -32,6 +56,27 @@ layout_mode = 0
 offset_right = 697.0
 offset_bottom = 1101.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_02gyh")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.061
+anchor_top = -3.226
+anchor_right = 0.061
+anchor_bottom = -3.226
+offset_left = 128.24
+offset_top = 695.888
+offset_right = 565.24
+offset_bottom = 1158.89
+theme_override_styles/panel = SubResource("StyleBoxFlat_s01d7")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 11.0
+offset_right = 688.0
+offset_bottom = 382.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_e47gs")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -68,7 +113,7 @@ scale = Vector2(0.544, 0.47)
 texture = ExtResource("2_te7y1")
 
 [node name="Dumpster2" type="Sprite2D" parent="."]
-position = Vector2(353, 571)
+position = Vector2(353, 537)
 scale = Vector2(0.602, 0.47)
 texture = ExtResource("3_ior13")
 
@@ -127,7 +172,7 @@ region_rect = Rect2(19, 7, 39, 55)
 
 [node name="Trash" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(357, 781)
+position = Vector2(360, 733)
 scale = Vector2(3, 3)
 texture = ExtResource("5_7r02t")
 region_enabled = true
